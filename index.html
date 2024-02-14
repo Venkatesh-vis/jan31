@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="./31jan(login).html" >
+        <label for="f_name">First Name:</label><br>
+        <input type="text" name="f_name" id="f_name"  placeholder="Enter your first name" autocomplete required><br>
+
+        <label for="s_name">Second Name:</label><br>
+        <input type="text" name="s_name" id="s_name" placeholder="Enter your second name" autocomplete required><br>
+
+        <label for="mail">Email:</label><br>
+        <input type="email" name="mail" id="mail" placeholder="Enter your e-mail" autocomplete required><br>
+
+        <label for="mobile">Mobile</label><br>
+        <input type="tel" name="num" id="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" autocomplete required><br>
+
+        <label for="pwd">Password:</label><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter password" required><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Re-enter password"  required><br>
+
+        <label for="skills">Skills:</label><br>
+        <label for="skills">HTML</label>
+        <input type="checkbox" name="skill1" id="skills" value="HTML"><br>
+        <label for="skills">CSS</label>
+        <input type="checkbox" name="skill2" id="skills" value="CSS"><br>
+        <label for="skills">JavaScript</label>
+        <input type="checkbox" name="skill3" id="skills" value="JavaScript"><br>
+        <label for="skills">React</label>
+        <input type="checkbox" name="skill4" id="skills" value="React"><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" value="male"><br>
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="gender" value="female"><br>
+
+        <label for="place">Location:</label><br>
+        <input list="places" placeholder="select your location" name="location" id="place"><br><br>
+        <datalist id="places">
+            <option value="select" selected disabled>select</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Khammam">Khammam</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Vizag">Vizag</option>
+            <option value="Bhadrachalam">Bhadrachalam</option>
+        </datalist>
+
+        <input type="submit" value="Register" ><br>
+        <label for="log">Have an account?</label>
+        <input type="submit" value="Login" formaction="./31jan(login).html" formnovalidate>
+    </form>
+</body>
+</html>
